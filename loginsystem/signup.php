@@ -44,6 +44,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>SignUp</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: fit-content;
+            margin-top:20px ;
+        }
+        .container{
+            background-color:#e1b984;
+        }
+        .text-center {
+        
+        }
+    </style>
   </head>
   <body>
     <?php require 'partials/_nav.php' ?>
@@ -66,8 +81,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     ?>
 
-    <div class="container my-4">
-     <h1 class="text-center">Signup to our website</h1>
+    <div class="container ">
+     <h1 class="text-center">Signup</h1>
+     <br>
      <form action="/loginsystem/signup.php" method="post">
         <div class="form-group">
             <label for="username">Username</label>
@@ -85,7 +101,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>
          
         <button type="submit" class="btn btn-primary">SignUp</button>
+        
      </form>
+     <br>
     </div>
 
     <!-- Optional JavaScript -->
