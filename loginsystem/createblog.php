@@ -12,7 +12,7 @@
   </head>
   <body>
 
-  <button type="button" class="btn btn-primary"><a href="addblog.php">Create blog</a></button>
+  <button type="button" class="btn btn-primary" style="background-color: white ><a href="addblog.php" style="text-decoration:none">Create blog</a></button>
       
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
