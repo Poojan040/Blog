@@ -40,6 +40,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>Login</title>
+    <style>
+            .container{
+                background-color: #e1b984;
+                width: fit-content;
+                text-align: left;
+                margin-top: 45px;
+            }
+
+
+    </style>
   </head>
   <body>
     <?php require 'partials/_nav.php' ?>
@@ -62,8 +72,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     ?>
 
-    <div class="container my-4">
-     <h1 class="text-center">Login to our website</h1>
+    <div class="container">
+     <h1 class="text-center">Login</h1>
      <form action="/loginsystem/login.php" method="post">
         <div class="form-group">
             <label for="username">Username</label>
@@ -75,9 +85,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <input type="password" class="form-control" id="password" name="password">
         </div>
         
-         
-        <button type="submit" class="btn btn-primary">Login</button>
+     <button type="submit" class="btn btn-primary">Login</button>
      </form>
+     <br>
     </div>
 
     <!-- Optional JavaScript -->
